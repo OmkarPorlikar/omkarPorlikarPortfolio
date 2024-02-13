@@ -44,7 +44,7 @@ useEffect(() => {
 
 
   return (
-    <div className=' innerWidth paddings c-wrapper'>
+    <div className=' innerWidth paddings c-wrapper flexColCenter'>
     <motion.div
     className='headx flexColCenter'
         initial="hidden"
