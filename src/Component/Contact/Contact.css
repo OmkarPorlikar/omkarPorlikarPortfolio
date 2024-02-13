@@ -106,7 +106,7 @@ color: orangered;
 
 @media screen and (max-width:780px) {
     .c-wrapper{
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
     .c-container{
         flex-direction: column;
