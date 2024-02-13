@@ -56,8 +56,8 @@ font-size: 1.4rem;
        flex-direction: column;
     }
     .service-card{
-        width: 28.5rem;
-        height: 16rem;
+        max-width: 23.5rem;
+        max-height: 26rem;
     }
     .service-card > :nth-child(1) {
         font-size: 4rem;
