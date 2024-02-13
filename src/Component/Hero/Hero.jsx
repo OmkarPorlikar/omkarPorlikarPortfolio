@@ -39,7 +39,7 @@ React.js, Next js, Typescript, MongoDB, Express.js, and Node.js to create scalab
 </div>
 
 <div className="hero-image-container">
-{/*   <div className='hero-blur'></div> */}
+  <div className='hero-blur'></div>
     <img src="./a boy.png" alt="" />
 </div>
 </section>
