@@ -121,6 +121,6 @@ filter: blur(18px);
 
    @media screen and (max-width:760px) {
     .hero-blur{
-      left: 8rem;
+      left: 0rem;
     }
    }
