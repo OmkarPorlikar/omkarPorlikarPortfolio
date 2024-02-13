@@ -42,7 +42,7 @@ function Home() {
       <Project />
       <TechStack/>
       <Education />
-{/*       <Contact /> */}
+      <Contact />
       </div>
    
     </div>
