@@ -124,7 +124,7 @@ JD College of Engineering, Nagpur </h3>
 </VerticalTimeline>
 </div>
 
-{ !(flag === '/about') ? 
+{ (flag === '/about') ? 
 <TechStack/>
  : null
 }
