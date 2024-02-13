@@ -103,7 +103,7 @@ function Navbar() {
 
 
   {/* responsive navbr */}
-{/*       <div className="h-menu-small flexColStart show">
+       <div className="h-menu-small flexColStart show">
         <button
           style={{ color: 'white', border: 'none', backgroundColor: 'transparent', fontSize: '1.1rem' }}
           onClick={toggleSlideOut}
@@ -140,7 +140,7 @@ function Navbar() {
             <li><button className='Button flexCenter' style={{ gap: '8px' , width:'100%' , margin:'0px 23px'} }> <span style={{ fontSize: '14px' }}>RESUME</span> <FaDownload />  </button></li>
           </ul>
         </Slider>
-      </div> */}
+      </div> 
     </div>
   );
 }
