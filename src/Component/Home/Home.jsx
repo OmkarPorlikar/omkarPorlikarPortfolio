@@ -41,7 +41,7 @@ function Home() {
       <Services />
       <Project />
       <TechStack/>
-{/*       <Education /> */}
+      <Education />
 {/*       <Contact /> */}
       </div>
    
