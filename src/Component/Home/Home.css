@@ -1,0 +1,53 @@
+/* .App {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  } */
+
+  .h-container{
+display: flex;
+
+  }
+  .home{
+    z-index: 999;
+  }
+
+  
+  .background-hover {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1; 
+  }
+  
+  .blur-circle {
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    width: 100px; 
+    height: 100px; 
+    background-color: rgba(132, 119, 204, 0.35); 
+    border-radius: 50%;
+    padding: 3rem 4rem;
+    filter: blur(30px);
+    backdrop-filter: blur(10px); 
+    pointer-events: none; 
+    z-index: -100; 
+    transition: all 0.3s ease; 
+  }
+  
+  @media screen and (max-width:1000px) {
+    .blur-circle{
+      display: none;
+    }
+    .home{
+      z-index: 1;
+    }
+  }

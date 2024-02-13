@@ -1,0 +1,144 @@
+.c-wrapper{
+margin-top: 4rem;
+padding: 24px 0px;
+}
+.ani-heading{
+    font-size: 2.25rem; /* Equivalent to text-4xl in Tailwind */
+font-weight: 600;   /* Equivalent to font-semibold in Tailwind */
+text-align: center;
+text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to drop-shadow-md in Tailwind */
+
+}
+.c-container{
+    width: 100%;
+    gap: 2rem;
+}
+.Input{
+    background-color: #212121;
+    box-shadow: 0 0 9px 2px #141414;
+    color: gray;
+    border-radius: 5px;
+    width: 100%;
+    height: 2.2rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+}
+.contact-form{
+    gap: 1.5rem;
+    width: 50%;
+    height: 20rem;
+    flex-wrap: nowrap;
+}
+.contact-form :nth-child(1){
+    width: 100%;
+    font-size: 1.7rem;
+font-weight: 600;
+    text-align: left;
+}
+.name-email{
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.name-email :nth-child(1){
+    flex: 1;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.name-email :nth-child(2){
+    width: 50%;
+}
+
+
+.contact-form :nth-child(4){
+width: 100%;
+    height: 9rem;
+    resize: vertical;
+}
+
+.contact-desc{
+    width: 100%;
+    margin: 0 auto;
+}
+.contact-desc textarea{
+    width: 100%;
+    background-color: #212121;
+    color: gray;
+
+}
+
+
+/* contact detail */
+.contact-details-container{
+    gap: 1rem;
+}
+.contact-details{
+    gap: 2rem;
+}
+.contact-info{
+    font-size: 1.7rem;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.contact-details  li {
+    text-align:left;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+.contact-details :nth-child(3) :nth-child(1){
+color: white;
+}
+.contact-details li :nth-child(1){
+    color: white;
+    font-size: 1.5rem;
+
+}
+.contact-details  li :nth-child(2){
+color: orangered;
+}
+
+@media screen and (max-width:780px) {
+    .c-wrapper{
+        margin-top: 2rem;
+    }
+    .c-container{
+        flex-direction: column;
+    }
+    .contact-form{
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+    }
+    .contact-details-container{
+
+    }
+    .contact-info{
+        text-align: center;
+    }
+    .contact-details{
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .name-email{
+        flex-direction: column;
+    }
+ 
+    .name-email :nth-child(1){
+        width: 100%;
+        height: 100%;
+    }
+    
+    .name-email :nth-child(2){
+        width: 100%;
+        height: 100%;
+
+    }
+}

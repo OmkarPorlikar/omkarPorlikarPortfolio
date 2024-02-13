@@ -1,0 +1,146 @@
+.pd-wrapper{
+ padding: 0 4rem;
+    width: 100%;
+}
+.posterImage{
+    height: 600px;
+}
+
+.posterImage > img {
+    margin: auto;
+    width: 100%;
+}
+.image{
+    height: 600px;
+    width: 500px;
+}
+.cont{
+    width: 100%;
+}
+
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-primary {
+  border-color: green;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+} 
+
+.image-container{
+    overflow: hidden;
+}
+.pd-title{
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+}
+.pd-image{
+margin: 0 auto;
+    width :85%;
+    height: 14rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: orangered 2px solid;
+    background-color: #313131;
+
+}
+.pd-image img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    margin-right: 6rem;
+}
+
+.pd-desc{
+    margin-top: 2rem;
+    line-height: 1.3;
+    color: gray;
+}
+.pd-heading{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
+    margin: 1rem 0;
+    display: block;
+}
+.pd-features-container{
+    font-size: 0.9rem;
+color: gray;
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+row-gap: 8px;
+}
+
+ .pd-wrapper .slick-dots li button {
+  border-radius: 50%;
+    border: 2px solid orangered;
+    height: 1rem;
+    width: 1rem;
+}
+
+.pd-btn{
+    gap:1rem;
+    margin: 2rem 0px;
+}
+.btn-first{
+    gap: 1rem;
+padding: 1rem 2rem;
+}
+
+.btn-second {
+    gap: 1rem;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #FF651C, #2949c6) 1;
+   background: none;
+  }
+  
+.pd-wrapper .slick-dots li button:before { 
+    color: transparent;
+
+}
+.pd-wrapper .slick-dots li.slick-active button
+{
+    color: transparent;
+    background-color: orangered;
+    border-radius: 50%;
+}
+
+.pd-wrapper .slick-dots li.slick-active button:before
+{
+    color: transparent;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 786px) {
+    .pd-wrapper{
+        padding: 0 1rem;
+    }
+    .pd-image{
+            width :90%;        
+        }
+        .pd-features-container{
+            grid-template-columns: 1fr;
+        }
+}

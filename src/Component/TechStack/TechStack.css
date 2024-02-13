@@ -1,0 +1,32 @@
+/* styles.css */
+.techStack-wrapper{
+  margin: 6rem 0rem 2rem 0rem;
+}
+
+.icon {
+    margin: 1rem ;
+    width: 10rem;
+    height: 3rem;
+    font-size: 2rem;
+    padding: 2rem 0rem ;
+    border-radius: 4px;
+    background-color: #313131;
+    flex-direction: column;
+  }
+  
+  .icon :nth-child(1){
+    font-size: 2.1rem;
+  }
+  .icon :nth-child(2){
+    color: honeydew;
+    font-size: 1rem;
+  }
+  .icon:hover {
+    background-color: #282c34;
+    transform: translateY(-5px);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .tech-stack{
+    margin: 3rem auto;
+    /* max-width: 27rem; */
+  }

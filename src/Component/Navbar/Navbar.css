@@ -1,0 +1,86 @@
+.nav-container{
+    width: 100%;
+    justify-content: space-between;
+    height: 2.5rem;
+background-color: #414040;
+    padding: 2rem 3rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    top:0px;
+    transition: all 0.3s linear;
+    z-index: 1000;
+}
+.h-menu-large{
+    color: white;
+    width: 40%;
+    justify-content: space-between;
+    list-style: none;
+}
+.hidden{
+top:-80px
+}
+.visible {
+    display: block; /* or inline, inline-block, etc. */
+    /* You can add transition properties for a smooth animation */
+    transition: all 0.5s ease;
+    opacity: 1;
+  }
+li{
+    cursor: pointer;
+}
+.show{
+    display: none;
+}
+
+@media screen and (max-width:786px) {
+    .SlideModal--open.SlideModal--right {
+        background-color: #212121;
+    }
+    .SlideModal {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 40%;
+        min-width: 300px;
+        background-color: #efefef;
+        z-index: 9999;
+    }
+   .h-menu-large{
+    display: none;
+   }
+   .h-menu{
+    padding-bottom: 1rem;
+    list-style: none;
+    gap: 1.4rem;
+    margin-top: 3rem;
+   }
+    .show{
+        display: flex;
+
+    }
+
+  
+    .h-overflowAuto {
+        display: flex;
+        flex-direction: column ;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .list-items{
+        text-align: left;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
+    .list-items span{
+        justify-content: flex-start;
+    }
+    .list-items :nth-child(1){
+        text-align: center;
+    }
+ 
+}

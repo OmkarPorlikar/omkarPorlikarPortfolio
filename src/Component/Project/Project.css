@@ -1,0 +1,143 @@
+.project-container{
+    /* flex-wrap: nowrap; */
+    gap: 2rem;
+}
+.project-container :nth-child(1) .logos{
+    margin-top: -8px;
+}
+.project-card{
+    position: relative;
+justify-content:space-evenly;
+    background-color: #414040;
+    border-radius: 9px;
+    padding: 1rem;
+    width: 19rem;
+    height: 24rem;
+    gap: 1.2rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-card div img{
+height: 10rem;
+width: 100%;
+border-radius: 9px;
+
+}
+.pro-desc-title {
+    color: coral;
+    font-size: 1.4rem;
+}
+.pro-desc :nth-child(2){
+    font-size: 0.9rem;
+    color: rgb(207, 207, 229);
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.pro-desc a {
+color: orangered;
+font-style: italic;
+}
+.pro-desc a:hover {
+text-decoration: dotted;
+    cursor:grab;
+}
+.logos{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.logos :nth-child(1){
+    font-size: 1.5rem;
+}
+
+.btn-project{
+    cursor: pointer;
+margin-left: 4rem;
+margin-top: 3rem;
+padding: 0.7rem 2rem;
+text-align: center;
+gap: 1rem;
+font-size: 1.2rem;
+margin: 0 auto;
+margin-top: 1rem;
+}
+
+
+.overlay {
+display: none;
+   
+}
+.overlay{
+
+    opacity: 0;
+  
+    width: 90%;
+    height: 23rem;
+    position: absolute;
+    bottom: 12px;
+
+    
+background: rgba(102, 195, 184, 0.15);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.6px);
+-webkit-backdrop-filter: blur(6.6px);
+border: 1px solid rgba(102, 195, 184, 0.37);
+
+-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+transition: opacity 0.35s, transform 0.35s;
+-webkit-transform: scale3d(1.4, 1.4, 1);
+transform: scale3d(1.4, 1.4, 1);
+
+}
+.project-card:hover .overlay {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    box-shadow: rgba(132, 119, 204, 0.35) 0px 5px 15px;
+
+
+}
+
+.project-card:hover .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(132, 119, 204, 0.35) 0px 5px 15px;
+    gap: 1rem;
+}
+
+@media screen and (max-width:768px) {
+    .project-container{
+  flex-direction: column;
+    }
+    .project-card{
+       width: 23rem;
+       height: 28rem;
+    }
+    .pro-desc :nth-child(2) {
+        font-size: 1.1rem;
+        color: rgb(207, 207, 229);
+        line-height: 1.1;
+        letter-spacing: 1px;
+    }
+    .project-card div img {
+        height: 13rem;
+        width: 100%;
+        border-radius: 9px;
+    }
+    #project-wrapper
+    {
+        margin-top: 4rem;
+    }
+    .overlay{
+        width: 95%;
+        height: 26rem;
+    }
+    .font-bold{
+        font-size: 2rem;
+    }
+}
