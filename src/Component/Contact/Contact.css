@@ -26,7 +26,7 @@ text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to drop-shadow-md in Ta
 }
 .contact-form{
     gap: 1.5rem;
-    width: 50%;
+    width: 100%;
     height: 20rem;
     flex-wrap: nowrap;
 }
