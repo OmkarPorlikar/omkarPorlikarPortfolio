@@ -7,6 +7,8 @@ import { useEffect } from 'react';
 import { headingAnimation, contactAnimation , contactDetails } from "../../hooks/useAnimation";
 import { useAnimation } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
+import { MdEmail, MdSend } from "react-icons/md";
+
 
 
 import {
