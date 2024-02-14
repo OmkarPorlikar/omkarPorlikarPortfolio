@@ -62,11 +62,17 @@ useEffect(() => {
       <div className='flexCenter c-container' 
       ref={ref}>
         {/* form container */}
-<motion.form className='flexColCenter contact-form' 
-initial={'hidden'}
-animate={viewDiv && 'visible'}
-variants={contactAnimation}
->
+
+   <motion.div
+   initial={'hidden'}
+   animate={viewDiv && 'visible'}
+   variants={contactAnimation}
+   className="contact-form-container"
+   style={{width:'50%'}}
+   
+   >    
+
+<form className='flexColCenter contact-form' >
 
 <span>Contact Me</span>
 <div className='name-email flexCenter'>
@@ -76,7 +82,16 @@ variants={contactAnimation}
  <input className='Input' type="text" placeholder='subject' /> 
 
 <textarea  className='Input'  placeholder='add description...' name="" id="" cols="30" rows="5"></textarea> 
-</motion.form>
+
+</form>
+<div >
+  <button className='Button btn-contact-form flexCenter'>    
+  <span> Send </span>
+  <span><MdSend/> </span>
+   </button>
+ 
+</div>
+</motion.div>   
 
 {/* contact details container  */}
 
