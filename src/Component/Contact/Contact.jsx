@@ -46,7 +46,6 @@ useEffect(() => {
     setViewDiv(false);
   }
 
-   console.log(data.name ,"name is ")
 }, [inView, animation]);
 
 
@@ -54,7 +53,6 @@ const handleForm = (e) =>
 {
 e.preventDefault();
 toast.success(' Your message has been Sent !')
-console.log(data, "data")
 setData((prev)=>(
   {
     name:'',
