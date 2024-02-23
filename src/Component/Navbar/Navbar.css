@@ -37,7 +37,7 @@ li{
     display: none;
 }
 
-@media screen and (max-width:786px) {
+@media screen and (max-width:1000px) {
     .SlideModal--open.SlideModal--right {
         background-color: #212121;
     }
