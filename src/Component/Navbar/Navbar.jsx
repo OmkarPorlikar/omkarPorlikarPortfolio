@@ -46,9 +46,6 @@ function Navbar() {
       const services = document.getElementsByClassName('c-wrapper');
       
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-      console.log(home, "home")
-      
    
 
       if (scrollTop >= home.offsetTop && scrollTop < about.offsetTop) {
@@ -63,8 +60,6 @@ function Navbar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    console.log(isSlideOutOpen , "what??")
 
     const controlScroll = () => {
       if (typeof window !== 'undefined') {
