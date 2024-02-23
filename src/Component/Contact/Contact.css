@@ -3,10 +3,10 @@ margin-top: 4rem;
 padding: 24px 0px;
 }
 .ani-heading{
-    font-size: 2.25rem; /* Equivalent to text-4xl in Tailwind */
-font-weight: 600;   /* Equivalent to font-semibold in Tailwind */
+    font-size: 2.25rem; 
+font-weight: 600;   
 text-align: center;
-text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to drop-shadow-md in Tailwind */
+text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 
 }
 .c-container{
@@ -70,6 +70,9 @@ width: 100%;
 
 }
 
+.contact-form-container{
+    /* width: 70%; */
+}
 
 /* contact detail */
 .contact-details-container{
@@ -103,7 +106,6 @@ color: white;
 .contact-details  li :nth-child(2){
 color: orangered;
 }
-
 .btn-contact-form{
     display: flex;
     align-items: flex-start;
@@ -115,13 +117,13 @@ color: orangered;
 
 @media screen and (max-width:780px) {
     .c-wrapper{
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
     .c-container{
         flex-direction: column;
     }
     .contact-form{
-        width: 90%;
+        width: 100%;
         height: 100%;
         padding: 1rem;
     }
@@ -132,7 +134,6 @@ color: orangered;
         text-align: center;
     }
     .contact-details{
-/*         flex-direction: row; */
         gap: 1rem;
         padding: 1rem;
     }
@@ -150,10 +151,10 @@ color: orangered;
         height: 100%;
 
     }
-  .contact-form-container{
-        width: 75%;
+    .contact-form-container{
+        width: 70%;
     }
-.btn-contact-form{
-margin-left: 1rem;
-}
+    .btn-contact-form{
+        margin-left: 1rem;
+    }
 }
