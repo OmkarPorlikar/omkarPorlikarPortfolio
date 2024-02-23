@@ -70,8 +70,6 @@ useEffect(() => {
    animate={viewDiv && 'visible'}
    variants={contactAnimation}
    className="contact-form-container"
-   style={{width:'50%'}}
-   
    >    
 
 <form className='flexColCenter contact-form' >
