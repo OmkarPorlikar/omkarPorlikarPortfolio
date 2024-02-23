@@ -2,12 +2,14 @@ import React from 'react'
 import './Contact.css'
 import BottomLine from '../BottomLine/BottomLine';
 import {motion} from 'framer-motion'
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useEffect , useState } from 'react';
 import { headingAnimation, contactAnimation , contactDetails } from "../../hooks/useAnimation";
 import { useAnimation } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 import { MdEmail, MdSend } from "react-icons/md";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+// import toast from 'react-toastify'
 
 import {
   FaUserAlt,
@@ -18,7 +20,18 @@ import {
 
 
 
+
+
 function Contact() {
+  const [data  , setData] = useState({
+    name:null,
+    email:null,
+    subject:null,
+    desc:null
+  })
+
+
+
   const animation = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.3, triggerOnce: true });
 const [viewDiv, setViewDiv] = useState(false);
@@ -33,9 +46,24 @@ useEffect(() => {
     setViewDiv(false);
   }
 
+   console.log(data.name ,"name is ")
 }, [inView, animation]);
 
 
+const handleForm = (e) =>
+{
+e.preventDefault();
+toast.success(' Your message has been Sent !')
+console.log(data, "data")
+setData((prev)=>(
+  {
+    name:'',
+    email:'',
+    subject:'',
+    desc:''
+  }
+))
+}
 
   return (
     <div className=' innerWidth paddings c-wrapper'>
@@ -65,25 +93,31 @@ useEffect(() => {
    
    >    
 
-<form className='flexColCenter contact-form' >
+<form className='flexColCenter contact-form' onSubmit={handleForm} >
 
-<span>Contact Me</span>
+<span className='form-title'>Contact Me</span>
 <div className='name-email flexCenter'>
-    <input type="text" className='Input' placeholder='name' />
-    <input type='email' className='Input' placeholder='email' />
+    <input type="text" className='Input' placeholder='name' value={data.name}  onChange={(e)=>{setData((prev)=>({...prev , name:e.target.value})) }} required/>
+    <input type='email' className='Input' placeholder='email' value={data.email} onChange={(e)=>{ setData((prev)=>({...prev , email:e.target.value}))}} required />
 </div>
- <input className='Input' type="text" placeholder='subject' /> 
+ <input className='Input' type="text" placeholder='subject' value={data.subject} onChange={(e)=>{setData((prev)=>({...prev , subject:e.target.value}))}} required/> 
 
-<textarea  className='Input'  placeholder='add description...' name="" id="" cols="30" rows="5"></textarea> 
+<textarea  className='Input'  placeholder='add description...' name="" id="" cols="30" rows="5"
+value={data.desc}
 
-</form>
-<div >
-  <button className='Button btn-contact-form flexCenter'>    
+onChange={(e)=>{setData((prev)=>({...prev ,desc:e.target.value })) }}
+required
+></textarea> 
+
+<div  className='btn-form-container'>
+  <button className='Button btn-contact-form flexCenter'  type='submit'>    
   <span> Send </span>
   <span><MdSend/> </span>
    </button>
  
 </div>
+</form>
+
 </motion.div>   
 
 {/* contact details container  */}
