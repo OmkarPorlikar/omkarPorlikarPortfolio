@@ -9,17 +9,9 @@ import { useAnimation } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 import { MdEmail, MdSend } from "react-icons/md";
 
-
-
 import {
   FaUserAlt,
   FaPhoneAlt,
-  FaLocationArrow,
-  FaLinkedin,
-  FaGithubSquare,
-  FaTwitterSquare,
-  FaInstagramSquare,
-  FaAddressBook,
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
@@ -46,7 +38,7 @@ useEffect(() => {
 
 
   return (
-    <div className=' innerWidth paddings c-wrapper flexColCenter'>
+    <div className=' innerWidth paddings c-wrapper'>
     <motion.div
     className='headx flexColCenter'
         initial="hidden"
@@ -70,6 +62,7 @@ useEffect(() => {
    animate={viewDiv && 'visible'}
    variants={contactAnimation}
    className="contact-form-container"
+   
    >    
 
 <form className='flexColCenter contact-form' >
