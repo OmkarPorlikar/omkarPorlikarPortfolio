@@ -30,12 +30,12 @@ text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 20rem;
     flex-wrap: nowrap;
 }
-.contact-form :nth-child(1){
+/* .contact-form :nth-child(1){
     width: 100%;
     font-size: 1.7rem;
 font-weight: 600;
     text-align: left;
-}
+} */
 .name-email{
     gap: 0.7rem;
     flex-wrap: wrap;
@@ -106,6 +106,18 @@ color: white;
 .contact-details  li :nth-child(2){
 color: orangered;
 }
+.btn-form-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.form-title{
+        width: 100%;
+        font-size: 1.7rem;
+        font-weight: 600;
+        text-align: left;
+}
 .btn-contact-form{
     display: flex;
     align-items: flex-start;
@@ -155,6 +167,6 @@ color: orangered;
         width: 70%;
     }
     .btn-contact-form{
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
     }
 }
