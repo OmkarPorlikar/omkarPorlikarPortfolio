@@ -84,7 +84,7 @@ function Navbar() {
 
   return (
     <div className={`nav-container  flexCenter ${flag && "hidden"}`} style={{ flexWrap: 'nowrap' }}>
-<a href="/">   <span> Omkar Porlikar</span> </a>
+<a href="/">   <img src="./omkarLogo.svg" alt="" className='logo-svg' /> </a>
       <ul className='h-menu-large flexCenter'>
         {navLinks.map((navItem) => (
           <li className="mx-4" key={navItem.id}>
