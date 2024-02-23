@@ -18,7 +18,6 @@ function Home() {
 
   useEffect(() => {
     const onMouseMove = (e) => {
-      console.log(e ,"Event")
       setMousePosition({ x: e.pageX, y: e.pageY });
     };
 
