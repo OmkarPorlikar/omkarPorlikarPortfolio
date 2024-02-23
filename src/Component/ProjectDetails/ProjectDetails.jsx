@@ -49,7 +49,6 @@ setItem(val)
 
  <Slider {...settings}>
         {Items?.img.map((img, index) => (
-          console.log(img , "image"),
           <div key={index} className="image-container" >
           <div 
             className="pd-image"
