@@ -10,6 +10,11 @@ background-color: #414040;
     transition: all 0.3s linear;
     z-index: 1000;
 }
+
+.logo-svg {
+    width: 6rem;
+    height: 5rem;
+}
 .h-menu-large{
     color: white;
     width: 40%;
