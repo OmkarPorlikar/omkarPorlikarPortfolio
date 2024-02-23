@@ -5,6 +5,10 @@
 .project-container :nth-child(1) .logos{
     margin-top: -8px;
 }
+
+.headx{
+    margin-top: 5rem;
+}
 .project-card{
     position: relative;
 justify-content:space-evenly;
