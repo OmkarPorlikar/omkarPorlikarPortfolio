@@ -95,8 +95,9 @@ projects.map((val)=>(
                     <h3 className="" style={{color:'white'}}>
                       {val.title}
                     </h3>
-                    <a
+                   <a
                       href={`/projects/${val.id}`}
+                      target={`/projects/${val.id}`}
                       className="mt-3 inline-block"
                     >
                       <button className="Button">
